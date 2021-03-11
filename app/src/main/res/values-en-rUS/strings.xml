@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Beatryx Beugnet Copyright (c) 2021. Plagiarism is absolutely Forbidden
+  -->
+
+<resources>
+    <string name="app_name">TP</string>
+    <string name="d_terminez_votre_poids">Determine your weight:</string>
+    <string name="poids">Weight:</string>
+    <string name="d_terminez_votre_taille">Determine your height:</string>
+    <string name="taille">height:</string>
+    <string name="m_tre">Metre</string>
+    <string name="centim_tre">Centimeter</string>
+    <string name="appr_ciation">Appreciation</string>
+    <string name="calculer_l_imc">Calculate BMI</string>
+    <string name="reset">Reset</string>
+    <string name="r_sultat">Result:</string>
+    <string name="vous_devez_cliquer">You have to click on the \"Calculate BMI\" button to get a result.</string>
+    <string name="maigreur">thinness</string>
+    <string name="famine">famine</string>
+    <string name="corpulence_normale">normal weight</string>
+    <string name="surpoids">overweight</string>
+    <string name="obésité_modérée">moderate obesity</string>
+    <string name="obésité_sévère">severe obesity</string>
+    <string name="obésité_morbide_ou_massive">morbid or massive obesity</string>
+    <string name="La_taille_doit_être_positive">The size must be positive</string>
+    <string name="Le_poids_doit_etre_positif">The weight must be positive</string>
+</resources>
