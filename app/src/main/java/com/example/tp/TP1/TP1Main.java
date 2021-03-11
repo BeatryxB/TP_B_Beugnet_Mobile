@@ -18,7 +18,9 @@ public class TP1Main extends AppCompatActivity {
         setContentView(R.layout.activity_tp1_main);
         Button btnP1 = (Button) findViewById(R.id.Partie1TP1);
         Button btnP2 = (Button) findViewById(R.id.Partie2TP1);
+        Button btnP3 = (Button) findViewById(R.id.Partie3TP1);
         btnP1.setOnClickListener(new GestionPartiesTP1(getApplicationContext()));
         btnP2.setOnClickListener(new GestionPartiesTP1(getApplicationContext()));
+        btnP3.setOnClickListener(new GestionPartiesTP1(getApplicationContext()));
     }
 }
