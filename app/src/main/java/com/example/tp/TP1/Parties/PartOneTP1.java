@@ -2,24 +2,19 @@ package com.example.tp.TP1.Parties;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.tp.R;
 
-public class partwoTP1 extends AppCompatActivity {
+public class PartOneTP1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_partwo_tp1);
-        Button btnEnvoyer = (Button) findViewById(R.id.btnEnvoyer);
-        btnEnvoyer.setOnClickListener(btnEnvoyerOnClickListener);
+        setContentView(R.layout.activity_partone_tp1);
         Button btnQuitter = (Button) findViewById(R.id.btnQuitter);
         btnQuitter.setOnClickListener(btnQuitterOnClickListener);
         popUp("onCreate()");
@@ -43,8 +38,6 @@ public class partwoTP1 extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        SharedPreferences settings = getSharedPreferences("cycle_vie_prefs", Context.MODE_PRIVATE);
-        setTxTValeur(settings.getString("cle", ""));
         popUp("onStart()");
     }
     /** ==============================================================
@@ -57,11 +50,8 @@ public class partwoTP1 extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        SharedPreferences settings = getSharedPreferences("cycle_vie_prefs", Context.MODE_PRIVATE);
-        setTxTValeur(settings.getString("cle", ""));
         popUp("onResume()");
     }
-
     /** =============================================================
      * La fonction onPause() est suivie :
      * - d'un onResume() si l'activité passe à nouveau en premier plan
@@ -74,10 +64,6 @@ public class partwoTP1 extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        SharedPreferences settings = getSharedPreferences("cycle_vie_prefs", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = settings.edit();
-        editor.putString("cle", getTxtValeur());
-        editor.commit();
         if (isFinishing()) {
             popUp("onPause, l'utilisateur à demandé la fermeture via un finish()");
         } else {
@@ -110,7 +96,6 @@ public class partwoTP1 extends AppCompatActivity {
         super.onDestroy();
         popUp("onDestroy()");
     }
-
     //=================================================================
     View.OnClickListener btnQuitterOnClickListener = new View.OnClickListener() {
         @Override
@@ -118,21 +103,6 @@ public class partwoTP1 extends AppCompatActivity {
             finish();
         }
     };
-    View.OnClickListener btnEnvoyerOnClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            popUp("valeur saisie = " + getTxtValeur());
-        }
-    };
-
-    public String getTxtValeur() {
-        EditText zoneValeur = (EditText) findViewById(R.id.editTxtValeur);
-        return zoneValeur.getText().toString();
-    }
-    public void setTxTValeur(String valeur) {
-        EditText zoneValeur = (EditText) findViewById(R.id.editTxtValeur);
-        zoneValeur.setText(valeur);
-    }
     public void popUp(String message) {
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
     }

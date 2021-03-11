@@ -23,12 +23,12 @@ public class GestionPartiesTP1 extends TP1Main implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.Partie1TP1:
-                Intent par1 = new Intent(v.getContext(), partoneTP1.class);
+                Intent par1 = new Intent(v.getContext(), PartOneTP1.class);
                 par1.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 Activity.startActivity(par1);
                 break;
             case R.id.Partie2TP1:
-                Intent par2 = new Intent(v.getContext(), partwoTP1.class);
+                Intent par2 = new Intent(v.getContext(), PartTwoTP1.class);
                 par2.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 Activity.startActivity(par2);
                 break;
