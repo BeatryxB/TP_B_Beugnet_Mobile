@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Bienvenue sur l'application des TPS"
+            app:autoSizeTextType="none" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Veuillez cliquer sur un boutons pour acceder au tp choisis"
+            app:autoSizeTextType="none" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="238dp" />
+
+        <Button
+            android:id="@+id/TP1Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|clip_vertical|center_horizontal"
+            android:text="TP1" />
+
+        <Button
+            android:id="@+id/TP2Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|clip_vertical|center_horizontal"
+            android:text="TP2" />
+
+        <Button
+            android:id="@+id/TP3Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|clip_vertical|center_horizontal"
+            android:text="TP3" />
+
+        <Button
+            android:id="@+id/TP4Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|clip_vertical|center_horizontal"
+            android:text="TP4" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
