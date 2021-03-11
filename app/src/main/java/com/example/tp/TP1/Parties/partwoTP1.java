@@ -110,6 +110,7 @@ public class partwoTP1 extends AppCompatActivity {
         super.onDestroy();
         popUp("onDestroy()");
     }
+
     //=================================================================
     View.OnClickListener btnQuitterOnClickListener = new View.OnClickListener() {
         @Override
