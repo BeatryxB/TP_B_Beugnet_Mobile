@@ -1,3 +1,7 @@
+<!--
+  ~ Beatryx Beugnet Copyright (c) 2021. Plagiarism is absolutely Forbidden
+  -->
+
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Theme.TP" parent="Theme.MaterialComponents.DayNight.DarkActionBar">

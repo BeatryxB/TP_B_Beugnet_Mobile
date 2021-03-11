@@ -1,3 +1,7 @@
+/*
+ * Beatryx Beugnet Copyright (c) 2021. Plagiarism is absolutely Forbidden
+ */
+
 package com.example.tp.TP1;
 
 import androidx.appcompat.app.AppCompatActivity;

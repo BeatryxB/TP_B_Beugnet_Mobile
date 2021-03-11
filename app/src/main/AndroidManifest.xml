@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Beatryx Beugnet Copyright (c) 2021. Plagiarism is absolutely Forbidden
+  -->
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tp">
 
@@ -9,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TP">
-        <activity android:name=".TP1.Parties.PartThreeTP1.PartThree2TP1"></activity>
+        <activity android:name=".TP2.TP2Main" />
+        <activity android:name=".TP2.Parties.IMC" />
+        <activity android:name=".TP1.Parties.PartThreeTP1.PartThree2TP1" />
         <activity android:name=".TP1.Parties.PartThreeTP1.PartThree1TP1" />
         <activity android:name=".TP1.Parties.PartTwoTP1" />
         <activity android:name=".TP1.Parties.PartOneTP1" />
