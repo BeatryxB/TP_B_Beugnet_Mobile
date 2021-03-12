@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.tp.R;
@@ -29,7 +30,7 @@ public class PartThree2TP1 extends AppCompatActivity {
     @Override
     protected void onRestart() {
         super.onRestart();
-        popUp("onRestart()");
+        popUp("onRestart() Activité 2,");
     }
     /** ==============================================================
      * Exécuté lorsque l'activité devient visible à l'utilisateur.
@@ -41,7 +42,7 @@ public class PartThree2TP1 extends AppCompatActivity {
         super.onStart();
         SharedPreferences settings = getSharedPreferences("cycle_vie_prefs", Context.MODE_PRIVATE);
         setTxTValeur(settings.getString("cle", ""));
-        popUp("onStart()");
+        popUp("onStart() Activité 2");
     }
     /** ==============================================================
      * Exécutée à chaque passage en premier plan de l'activité.
@@ -55,7 +56,7 @@ public class PartThree2TP1 extends AppCompatActivity {
         super.onResume();
         SharedPreferences settings = getSharedPreferences("cycle_vie_prefs", Context.MODE_PRIVATE);
         setTxTValeur(settings.getString("cle", ""));
-        popUp("onResume()");
+        popUp("onResume() Activité 2");
     }
 
     /** =============================================================
@@ -75,9 +76,9 @@ public class PartThree2TP1 extends AppCompatActivity {
         editor.putString("cle", getTxtValeur());
         editor.commit();
         if (isFinishing()) {
-            popUp("onPause, l'utilisateur à demandé la fermeture via un finish()");
+            popUp("onPause, l'utilisateur à demandé la fermeture via un finish() Activité 2");
         } else {
-            popUp("onPause, l'utilisateur n'a pas demandé la fermeture via un finish()");
+            popUp("onPause, l'utilisateur n'a pas demandé la fermeture via un finish() Activité 2");
         }
     }
     /** ==============================================================
@@ -93,7 +94,7 @@ public class PartThree2TP1 extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
-        popUp("onStop()");
+        popUp("onStop() Activité 2");
     }
     /** =============================================================
      * Cette fonction est exécutée lorsque l'activité se termine ou bien lorsque
@@ -104,7 +105,7 @@ public class PartThree2TP1 extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        popUp("onDestroy()");
+        popUp("onDestroy() Activité 2");
     }
 
     //=================================================================
@@ -126,7 +127,7 @@ public class PartThree2TP1 extends AppCompatActivity {
         return zoneValeur.getText().toString();
     }
     public void setTxTValeur(String valeur) {
-        EditText zoneValeur = (EditText) findViewById(R.id.editTxtValeur);
+        TextView zoneValeur = (TextView) findViewById(R.id.textView1);
         zoneValeur.setText(valeur);
     }
     public void popUp(String message) {

@@ -21,6 +21,8 @@ public class PartThree1TP1 extends AppCompatActivity {
         setContentView(R.layout.activity_part_three1_tp1);
         Button btnEnvoyer = (Button) findViewById(R.id.btnEnvoyer);
         btnEnvoyer.setOnClickListener(btnEnvoyerOnClickListener);
+        Button btnAct2 = (Button) findViewById(R.id.btnAct2);
+        btnAct2.setOnClickListener(btnAct2OnClickListener);
         Button btnQuitter = (Button) findViewById(R.id.btnQuitter);
         btnQuitter.setOnClickListener(btnQuitterOnClickListener);
         popUp("onCreate()");
@@ -122,9 +124,15 @@ public class PartThree1TP1 extends AppCompatActivity {
     View.OnClickListener btnEnvoyerOnClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+            popUp("valeur saisie = " + getTxtValeur());
+        }
+    };
+
+    View.OnClickListener btnAct2OnClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
             Intent intent = new Intent(v.getContext(), PartThree2TP1.class);
             startActivity(intent);
-            popUp("valeur saisie = " + getTxtValeur());
         }
     };
 
