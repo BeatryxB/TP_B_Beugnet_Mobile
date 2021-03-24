@@ -3,6 +3,7 @@ package com.example.tp.TP1.Parties.PartThreeTP1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -43,6 +44,9 @@ public class PartThree2TP1 extends AppCompatActivity {
         SharedPreferences settings = getSharedPreferences("cycle_vie_prefs", Context.MODE_PRIVATE);
         setTxTValeur(settings.getString("cle", ""));
         popUp("onStart() Activité 2");
+        Intent intent = getIntent();
+        String v= "" ;
+        if (intent != null)   v=intent.getStringExtra("clé") ;
     }
     /** ==============================================================
      * Exécutée à chaque passage en premier plan de l'activité.

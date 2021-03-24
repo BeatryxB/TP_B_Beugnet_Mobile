@@ -132,6 +132,7 @@ public class PartThree1TP1 extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent(v.getContext(), PartThree2TP1.class);
+            intent.putExtra("clé",getTxtValeur()) ;
             startActivity(intent);
         }
     };
