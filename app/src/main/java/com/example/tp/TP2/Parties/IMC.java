@@ -45,6 +45,7 @@ public class IMC extends AppCompatActivity {
         commentaire.setOnClickListener(checkedListener);
         taille.addTextChangedListener(textWatcher);
         poids.addTextChangedListener(textWatcher);
+
     }
 
     private View.OnClickListener envoyerListener = new View.OnClickListener() {
