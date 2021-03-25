@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TP">
-        <activity android:name=".TP3.Parties.Planete"></activity>
+        <activity android:name=".TP3.Parties.Planet"></activity>
         <activity android:name=".TP3.TP3Main" />
         <activity android:name=".TP2.TP2Main" />
         <activity android:name=".TP2.Parties.IMC" />

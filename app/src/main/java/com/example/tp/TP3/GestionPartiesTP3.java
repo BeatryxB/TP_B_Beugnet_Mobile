@@ -27,7 +27,7 @@ public class GestionPartiesTP3 extends TP3Main implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.PlaneteTP3:
-                Intent IMC = new Intent(v.getContext(), Planete.class);
+                Intent IMC = new Intent(v.getContext(), Planet.class);
                 IMC.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 Activity.startActivity(IMC);
                 break;
