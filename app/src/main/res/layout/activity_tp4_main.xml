@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Beatryx Beugnet Copyright (c) 2021. Plagiarism is absolutely Forbidden
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TP4.TP4Main">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/black">
+
+        <TextView
+            android:textColor="@color/Pink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Bienvenue sur le TP4"
+            app:autoSizeTextType="none" />
+        <TextView
+            android:textColor="@color/Pink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Veuillez cliquer sur un boutons pour acceder à la partie choisi :"
+            app:autoSizeTextType="none" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="238dp" />
+
+        <Button
+            android:backgroundTint="@color/Pink"
+            android:id="@+id/Partie1TP4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|clip_vertical|center_horizontal"
+            android:text="Gestion du TP" />
+
+        <Button
+            android:backgroundTint="@color/Pink"
+            android:id="@+id/saisonTP4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|clip_vertical|center_horizontal"
+            android:text="4 saisons" />
+
+        <Button
+            android:backgroundTint="@color/Pink"
+            android:id="@+id/PaymentTP4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|clip_vertical|center_horizontal"
+            android:text="Paiment" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,6 +12,7 @@ import android.view.View;
 import com.example.tp.TP1.*;
 import com.example.tp.TP2.*;
 import com.example.tp.TP3.*;
+import com.example.tp.TP4.*;
 
 public class GestionTP extends MainActivity implements View.OnClickListener{
 
@@ -42,6 +43,11 @@ public class GestionTP extends MainActivity implements View.OnClickListener{
                 Intent TP3 = new Intent(v.getContext(), TP3Main.class);
                 TP3.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 Activity.startActivity(TP3);
+                break;
+            case R.id.TP4Button:
+                Intent TP4 = new Intent(v.getContext(), TP4Main.class);
+                TP4.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                Activity.startActivity(TP4);
                 break;
             default:
                 break;

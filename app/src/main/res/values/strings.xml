@@ -24,4 +24,11 @@
     <string name="La_taille_doit_être_positive">La taille doit être positive</string>
     <string name="Le_poids_doit_etre_positif">Le poids doit etre positif</string>
     <string name="surpoids">surpoids</string>
+    <string name="title_activity_guided_tp4" translatable="false">guidedTP4</string>
+    <string name="tab_text_1" translatable="false">Tab 1</string>
+    <string name="tab_text_2" translatable="false">Tab 2</string>
+    <string name="action_settings" translatable="false"> </string>
+    <string name="titre_section0" translatable="false">Mineral</string>
+    <string name="titre_section1" translatable="false">Vege</string>
+    <string name="titre_section2" translatable="false">Animal</string>
 </resources>

@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TP">
-        <activity android:name=".TP3.Parties.Planet"></activity>
+        <activity
+            android:name=".TP4.Parties.GuideeTP4.guidedTP4"
+            android:label="@string/title_activity_guided_tp4"
+            android:theme="@style/Theme.TP.NoActionBar"></activity>
+        <activity android:name=".TP3.Parties.Planet" />
         <activity android:name=".TP3.TP3Main" />
         <activity android:name=".TP2.TP2Main" />
         <activity android:name=".TP2.Parties.IMC" />
@@ -18,6 +22,7 @@
         <activity android:name=".TP1.Parties.PartTwoTP1" />
         <activity android:name=".TP1.Parties.PartOneTP1" />
         <activity android:name=".TP1.TP1Main" />
+        <activity android:name=".TP4.TP4Main" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -18,8 +18,10 @@ public class MainActivity extends AppCompatActivity {
         Button TP1 = (Button) findViewById(R.id.TP1Button);
         Button TP2 = (Button) findViewById(R.id.TP2Button);
         Button TP3 = (Button) findViewById(R.id.TP3Button);
+        Button TP4 = (Button) findViewById(R.id.TP4Button);
         TP1.setOnClickListener(new GestionTP(getApplicationContext()));
         TP2.setOnClickListener(new GestionTP(getApplicationContext()));
         TP3.setOnClickListener(new GestionTP(getApplicationContext()));
+        TP4.setOnClickListener(new GestionTP(getApplicationContext()));
     }
 }
